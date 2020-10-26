@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <simLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <simLog>
+        <logs message="Warning: OPMODE Input Warning : The OPMODE 011XX11 with CARRYINSEL  000 to DSP48E1 instance is invalid.&#xA;Time: 586455001 ps  Iteration: 13  Process: /apatb_CarrierTracking_top/AESL_inst_CarrierTracking/CarrierTracking_dbkb_U47/CarrierTracking_ap_dmul_1_max_dsp_64_u/U0/i_synth/mult/OP/i_non_prim/R_AND_R/logic/R_AND_R/dsp48_e1/dsp48e1_add/DSP48E1_ADD/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2019.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd" projectName="KalmanHls" solutionName="solution1" date="2020-09-28T01:58:39.252-0700" type="Warning"/>
+      </simLog>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

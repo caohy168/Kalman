@@ -1,0 +1,622 @@
+{
+  "Top": "CarrierTracking",
+  "RtlTop": "CarrierTracking",
+  "RtlPrefix": "",
+  "SourceLanguage": "cpp",
+  "ResetStyle": "control",
+  "GenerateBdFiles": "1",
+  "HostMachineBits": "64",
+  "Target": {
+    "Family": "kintexu",
+    "Device": "xcku040",
+    "Package": "-ffva1156",
+    "Speed": "-2-e"
+  },
+  "HlsSolution": {"Config": [
+      "config_array_partition -auto_partition_threshold=4",
+      "config_array_partition -auto_promotion_threshold=64",
+      "config_array_partition -include_extern_globals=0",
+      "config_array_partition -include_ports=0",
+      "config_array_partition -maximum_size=20480",
+      "config_array_partition -scalarize_all=0",
+      "config_array_partition -throughput_driven=1",
+      "config_rtl -encoding=auto",
+      "config_rtl -kernel_profile=0",
+      "config_rtl -module_auto_prefix=0",
+      "config_rtl -mult_keep_attribute=0",
+      "config_rtl -reset=control",
+      "config_rtl -reset_async=0",
+      "config_rtl -reset_level=high",
+      "config_rtl -verbose=0",
+      "config_export -description {Kalman Filter}",
+      "config_export -display_name=Kalman",
+      "config_export -format=ip_catalog",
+      "config_export -library=hls",
+      "config_export -rtl=verilog",
+      "config_export -vendor=THZ",
+      "config_export -version=1.0",
+      "config_export -vivado_optimization_level=2",
+      "config_export -vivado_phys_opt=place",
+      "config_export -vivado_report_level=0"
+    ]},
+  "Args": {
+    "Ts": {
+      "index": "0",
+      "type": {
+        "dataType": "float",
+        "dataWidth": "32",
+        "interfaceRef": "Ts"
+      }
+    },
+    "DotNumber": {
+      "index": "1",
+      "type": {
+        "dataType": "int",
+        "dataWidth": "32",
+        "interfaceRef": "DotNumber"
+      }
+    },
+    "DeltaThetaInitinital": {
+      "index": "2",
+      "type": {
+        "dataType": "float",
+        "dataWidth": "32",
+        "interfaceRef": "DeltaThetaInitinital"
+      }
+    },
+    "Omega0Initinital": {
+      "index": "3",
+      "type": {
+        "dataType": "float",
+        "dataWidth": "32",
+        "interfaceRef": "Omega0Initinital"
+      }
+    },
+    "Omega1Initinital": {
+      "index": "4",
+      "type": {
+        "dataType": "float",
+        "dataWidth": "32",
+        "interfaceRef": "Omega1Initinital"
+      }
+    },
+    "DetaTheta": {
+      "index": "5",
+      "type": {
+        "kinds": ["array"],
+        "dataType": "float",
+        "dataWidth": "32",
+        "arraySizes": ["10000"],
+        "interfaceRef": "DetaTheta",
+        "portRef": "TDATA"
+      }
+    },
+    "Omega0": {
+      "index": "6",
+      "type": {
+        "kinds": ["array"],
+        "dataType": "float",
+        "dataWidth": "32",
+        "arraySizes": ["10000"],
+        "interfaceRef": "Omega0",
+        "portRef": "TDATA"
+      }
+    },
+    "Omega1": {
+      "index": "7",
+      "type": {
+        "kinds": ["array"],
+        "dataType": "float",
+        "dataWidth": "32",
+        "arraySizes": ["10000"],
+        "interfaceRef": "Omega1",
+        "portRef": "TDATA"
+      }
+    }
+  },
+  "Return": {
+    
+  },
+  "ClockInfo": {
+    "ClockName": "ap_clk",
+    "ClockPeriod": "10",
+    "IsCombLogic": "0",
+    "II": "x",
+    "Latency": "undef",
+    "Uncertainty": "1.25"
+  },
+  "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 10.000 [get_ports ap_clk]"]},
+  "Ipx": {
+    "Vendor": "THZ",
+    "Library": "hls",
+    "Name": "CarrierTracking",
+    "Version": "1.0",
+    "DisplayName": "Kalman",
+    "Revision": "",
+    "Description": "Kalman Filter",
+    "Taxonomy": "\/VIVADO_HLS_IP",
+    "AutoFamilySupport": ""
+  },
+  "Files": {
+    "CSource": ["..\/..\/..\/Kalman.cpp"],
+    "Vhdl": [
+      "impl\/vhdl\/CarrierTracking_dbkb.vhd",
+      "impl\/vhdl\/CarrierTracking_dkbM.vhd",
+      "impl\/vhdl\/CarrierTracking_dlbW.vhd",
+      "impl\/vhdl\/CarrierTracking_fdEe.vhd",
+      "impl\/vhdl\/CarrierTracking_feOg.vhd",
+      "impl\/vhdl\/CarrierTracking_ffYi.vhd",
+      "impl\/vhdl\/CarrierTracking_fg8j.vhd",
+      "impl\/vhdl\/CarrierTracking_fibs.vhd",
+      "impl\/vhdl\/CarrierTracking_fjbC.vhd",
+      "impl\/vhdl\/CarrierTracking_scud.vhd",
+      "impl\/vhdl\/CarrierTracking_shbi.vhd",
+      "impl\/vhdl\/CarrierTracking_V.vhd",
+      "impl\/vhdl\/CarrierTracking_W.vhd",
+      "impl\/vhdl\/NoiseRand.vhd",
+      "impl\/vhdl\/pow_generic_double_s.vhd",
+      "impl\/vhdl\/regslice_core.vhd",
+      "impl\/vhdl\/CarrierTracking.vhd"
+    ],
+    "Verilog": [
+      "impl\/verilog\/CarrierTracking_dbkb.v",
+      "impl\/verilog\/CarrierTracking_dkbM.v",
+      "impl\/verilog\/CarrierTracking_dlbW.v",
+      "impl\/verilog\/CarrierTracking_fdEe.v",
+      "impl\/verilog\/CarrierTracking_feOg.v",
+      "impl\/verilog\/CarrierTracking_ffYi.v",
+      "impl\/verilog\/CarrierTracking_fg8j.v",
+      "impl\/verilog\/CarrierTracking_fibs.v",
+      "impl\/verilog\/CarrierTracking_fjbC.v",
+      "impl\/verilog\/CarrierTracking_scud.v",
+      "impl\/verilog\/CarrierTracking_shbi.v",
+      "impl\/verilog\/CarrierTracking_V.v",
+      "impl\/verilog\/CarrierTracking_W.v",
+      "impl\/verilog\/NoiseRand.v",
+      "impl\/verilog\/pow_generic_double_s.v",
+      "impl\/verilog\/regslice_core.v",
+      "impl\/verilog\/CarrierTracking.v"
+    ],
+    "Misc": ["impl\/misc\/logo.png"],
+    "Subcore": [
+      "impl\/misc\/CarrierTracking_ap_ddiv_15_no_dsp_64_ip.tcl",
+      "impl\/misc\/CarrierTracking_ap_dmul_3_max_dsp_64_ip.tcl",
+      "impl\/misc\/CarrierTracking_ap_dsqrt_19_no_dsp_64_ip.tcl",
+      "impl\/misc\/CarrierTracking_ap_fadd_2_full_dsp_32_ip.tcl",
+      "impl\/misc\/CarrierTracking_ap_faddfsub_2_full_dsp_32_ip.tcl",
+      "impl\/misc\/CarrierTracking_ap_fdiv_6_no_dsp_32_ip.tcl",
+      "impl\/misc\/CarrierTracking_ap_fmul_0_max_dsp_32_ip.tcl",
+      "impl\/misc\/CarrierTracking_ap_fpext_0_no_dsp_32_ip.tcl",
+      "impl\/misc\/CarrierTracking_ap_fptrunc_0_no_dsp_64_ip.tcl",
+      "impl\/misc\/CarrierTracking_ap_sitodp_2_no_dsp_32_ip.tcl",
+      "impl\/misc\/CarrierTracking_ap_sitofp_1_no_dsp_32_ip.tcl"
+    ],
+    "DesignXml": "\/home\/caohy\/work\/Kalman\/vivado_hls\/KalmanFilter\/KalmanHls\/KalmanHls\/solution2\/.autopilot\/db\/CarrierTracking.design.xml",
+    "DebugDir": "\/home\/caohy\/work\/Kalman\/vivado_hls\/KalmanFilter\/KalmanHls\/KalmanHls\/solution2\/.debug",
+    "ProtoInst": ["\/home\/caohy\/work\/Kalman\/vivado_hls\/KalmanFilter\/KalmanHls\/KalmanHls\/solution2\/.debug\/CarrierTracking.protoinst"]
+  },
+  "SubcoreInfo": {
+    "HasXpmMemory": false,
+    "HasClockedDsp": false,
+    "IP": [
+      {
+        "name": "CarrierTracking_ap_ddiv_15_no_dsp_64",
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "params": "CONFIG.a_precision_type Double CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 11 CONFIG.c_a_fraction_width 53 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 15 CONFIG.c_mult_usage No_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 11 CONFIG.c_result_fraction_width 53 CONFIG.component_name CarrierTracking_ap_ddiv_15_no_dsp_64 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken true CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Divide CONFIG.result_precision_type Double CONFIG.result_tlast_behv Null"
+      },
+      {
+        "name": "CarrierTracking_ap_dmul_3_max_dsp_64",
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "params": "CONFIG.a_precision_type Double CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 11 CONFIG.c_a_fraction_width 53 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 3 CONFIG.c_mult_usage Max_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 11 CONFIG.c_result_fraction_width 53 CONFIG.component_name CarrierTracking_ap_dmul_3_max_dsp_64 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken true CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Multiply CONFIG.result_precision_type Double CONFIG.result_tlast_behv Null"
+      },
+      {
+        "name": "CarrierTracking_ap_dsqrt_19_no_dsp_64",
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "params": "CONFIG.a_precision_type Double CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 11 CONFIG.c_a_fraction_width 53 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 19 CONFIG.c_mult_usage No_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 11 CONFIG.c_result_fraction_width 53 CONFIG.component_name CarrierTracking_ap_dsqrt_19_no_dsp_64 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken true CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Square_Root CONFIG.result_precision_type Double CONFIG.result_tlast_behv Null"
+      },
+      {
+        "name": "CarrierTracking_ap_fadd_2_full_dsp_32",
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "params": "CONFIG.a_precision_type Single CONFIG.a_tuser_width 1 CONFIG.add_sub_value Add CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 8 CONFIG.c_a_fraction_width 24 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 2 CONFIG.c_mult_usage Full_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 8 CONFIG.c_result_fraction_width 24 CONFIG.component_name CarrierTracking_ap_fadd_2_full_dsp_32 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken true CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Add_Subtract CONFIG.result_precision_type Single CONFIG.result_tlast_behv Null"
+      },
+      {
+        "name": "CarrierTracking_ap_faddfsub_2_full_dsp_32",
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "params": "CONFIG.a_precision_type Single CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 8 CONFIG.c_a_fraction_width 24 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 2 CONFIG.c_mult_usage Full_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 8 CONFIG.c_result_fraction_width 24 CONFIG.component_name CarrierTracking_ap_faddfsub_2_full_dsp_32 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken true CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Add_Subtract CONFIG.result_precision_type Single CONFIG.result_tlast_behv Null"
+      },
+      {
+        "name": "CarrierTracking_ap_fdiv_6_no_dsp_32",
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "params": "CONFIG.a_precision_type Single CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 8 CONFIG.c_a_fraction_width 24 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 6 CONFIG.c_mult_usage No_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 8 CONFIG.c_result_fraction_width 24 CONFIG.component_name CarrierTracking_ap_fdiv_6_no_dsp_32 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken true CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Divide CONFIG.result_precision_type Single CONFIG.result_tlast_behv Null"
+      },
+      {
+        "name": "CarrierTracking_ap_fmul_0_max_dsp_32",
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "params": "CONFIG.a_precision_type Single CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 8 CONFIG.c_a_fraction_width 24 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 0 CONFIG.c_mult_usage Max_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 8 CONFIG.c_result_fraction_width 24 CONFIG.component_name CarrierTracking_ap_fmul_0_max_dsp_32 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken false CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Multiply CONFIG.result_precision_type Single CONFIG.result_tlast_behv Null"
+      },
+      {
+        "name": "CarrierTracking_ap_fpext_0_no_dsp_32",
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "params": "CONFIG.a_precision_type Single CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 8 CONFIG.c_a_fraction_width 24 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 0 CONFIG.c_mult_usage No_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 11 CONFIG.c_result_fraction_width 53 CONFIG.component_name CarrierTracking_ap_fpext_0_no_dsp_32 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken false CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Float_to_Float CONFIG.result_precision_type Double CONFIG.result_tlast_behv Null"
+      },
+      {
+        "name": "CarrierTracking_ap_fptrunc_0_no_dsp_64",
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "params": "CONFIG.a_precision_type Double CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 11 CONFIG.c_a_fraction_width 53 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 0 CONFIG.c_mult_usage No_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 8 CONFIG.c_result_fraction_width 24 CONFIG.component_name CarrierTracking_ap_fptrunc_0_no_dsp_64 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken false CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Float_to_Float CONFIG.result_precision_type Single CONFIG.result_tlast_behv Null"
+      },
+      {
+        "name": "CarrierTracking_ap_sitodp_2_no_dsp_32",
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "params": "CONFIG.a_precision_type Custom CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 32 CONFIG.c_a_fraction_width 0 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 2 CONFIG.c_mult_usage No_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 11 CONFIG.c_result_fraction_width 53 CONFIG.component_name CarrierTracking_ap_sitodp_2_no_dsp_32 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken true CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Fixed_to_Float CONFIG.result_precision_type Double CONFIG.result_tlast_behv Null"
+      },
+      {
+        "name": "CarrierTracking_ap_sitofp_1_no_dsp_32",
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "params": "CONFIG.a_precision_type Custom CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 32 CONFIG.c_a_fraction_width 0 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 1 CONFIG.c_mult_usage No_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 8 CONFIG.c_result_fraction_width 24 CONFIG.component_name CarrierTracking_ap_sitofp_1_no_dsp_32 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken true CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Fixed_to_Float CONFIG.result_precision_type Single CONFIG.result_tlast_behv Null"
+      }
+    ]
+  },
+  "Interfaces": {
+    "ap_clk": {
+      "type": "clock",
+      "ctype": {"CLK": {"Type": "bool"}},
+      "bundle_name": "ap_clk",
+      "bundle_role": "default",
+      "buses": "DetaTheta Omega0 Omega1",
+      "reset": "ap_rst_n"
+    },
+    "ap_ctrl": {
+      "type": "ap_ctrl",
+      "ctrl_ports": "ap_start ap_done ap_idle ap_ready",
+      "ctype": {
+        "start": {"Type": "bool"},
+        "done": {"Type": "bool"},
+        "idle": {"Type": "bool"},
+        "ready": {"Type": "bool"}
+      }
+    },
+    "ap_rst_n": {
+      "type": "reset",
+      "polarity": "ACTIVE_LOW",
+      "ctype": {"RST": {"Type": "bool"}},
+      "bundle_name": "ap_rst_n",
+      "bundle_role": "default"
+    },
+    "DeltaThetaInitinital": {
+      "type": "data",
+      "dir": "in",
+      "width": "32",
+      "ctype": {"DATA": {
+          "Type": "real float",
+          "Width": "32"
+        }},
+      "bundle_name": "DeltaThetaInitinital",
+      "bundle_role": "default"
+    },
+    "DetaTheta": {
+      "type": "axi4stream",
+      "mode": "master",
+      "port_prefix": "DetaTheta",
+      "has_tready": "1",
+      "ctype": {
+        "TDATA": {
+          "Type": "real float",
+          "Width": "32"
+        },
+        "TVALID": {"Type": "bool"},
+        "TREADY": {"Type": "bool"}
+      },
+      "port_width": {"TDATA": "32"}
+    },
+    "DotNumber": {
+      "type": "data",
+      "dir": "in",
+      "width": "32",
+      "ctype": {"DATA": {
+          "Type": "integer signed",
+          "Width": "32"
+        }},
+      "bundle_name": "DotNumber",
+      "bundle_role": "default"
+    },
+    "Omega0": {
+      "type": "axi4stream",
+      "mode": "master",
+      "port_prefix": "Omega0",
+      "has_tready": "1",
+      "ctype": {
+        "TDATA": {
+          "Type": "real float",
+          "Width": "32"
+        },
+        "TVALID": {"Type": "bool"},
+        "TREADY": {"Type": "bool"}
+      },
+      "port_width": {"TDATA": "32"}
+    },
+    "Omega0Initinital": {
+      "type": "data",
+      "dir": "in",
+      "width": "32",
+      "ctype": {"DATA": {
+          "Type": "real float",
+          "Width": "32"
+        }},
+      "bundle_name": "Omega0Initinital",
+      "bundle_role": "default"
+    },
+    "Omega1": {
+      "type": "axi4stream",
+      "mode": "master",
+      "port_prefix": "Omega1",
+      "has_tready": "1",
+      "ctype": {
+        "TDATA": {
+          "Type": "real float",
+          "Width": "32"
+        },
+        "TVALID": {"Type": "bool"},
+        "TREADY": {"Type": "bool"}
+      },
+      "port_width": {"TDATA": "32"}
+    },
+    "Omega1Initinital": {
+      "type": "data",
+      "dir": "in",
+      "width": "32",
+      "ctype": {"DATA": {
+          "Type": "real float",
+          "Width": "32"
+        }},
+      "bundle_name": "Omega1Initinital",
+      "bundle_role": "default"
+    },
+    "Ts": {
+      "type": "data",
+      "dir": "in",
+      "width": "32",
+      "ctype": {"DATA": {
+          "Type": "real float",
+          "Width": "32"
+        }},
+      "bundle_name": "Ts",
+      "bundle_role": "default"
+    }
+  },
+  "RtlPorts": {
+    "ap_clk": {
+      "dir": "in",
+      "width": "1"
+    },
+    "ap_rst_n": {
+      "dir": "in",
+      "width": "1"
+    },
+    "ap_start": {
+      "dir": "in",
+      "width": "1"
+    },
+    "ap_done": {
+      "dir": "out",
+      "width": "1"
+    },
+    "ap_idle": {
+      "dir": "out",
+      "width": "1"
+    },
+    "ap_ready": {
+      "dir": "out",
+      "width": "1"
+    },
+    "Ts": {
+      "dir": "in",
+      "width": "32"
+    },
+    "Ts_ap_vld": {
+      "dir": "in",
+      "width": "1"
+    },
+    "DotNumber": {
+      "dir": "in",
+      "width": "32"
+    },
+    "DotNumber_ap_vld": {
+      "dir": "in",
+      "width": "1"
+    },
+    "DeltaThetaInitinital": {
+      "dir": "in",
+      "width": "32"
+    },
+    "DeltaThetaInitinital_ap_vld": {
+      "dir": "in",
+      "width": "1"
+    },
+    "Omega0Initinital": {
+      "dir": "in",
+      "width": "32"
+    },
+    "Omega0Initinital_ap_vld": {
+      "dir": "in",
+      "width": "1"
+    },
+    "Omega1Initinital": {
+      "dir": "in",
+      "width": "32"
+    },
+    "Omega1Initinital_ap_vld": {
+      "dir": "in",
+      "width": "1"
+    },
+    "DetaTheta_TDATA": {
+      "dir": "out",
+      "width": "32"
+    },
+    "DetaTheta_TVALID": {
+      "dir": "out",
+      "width": "1"
+    },
+    "DetaTheta_TREADY": {
+      "dir": "in",
+      "width": "1"
+    },
+    "Omega0_TDATA": {
+      "dir": "out",
+      "width": "32"
+    },
+    "Omega0_TVALID": {
+      "dir": "out",
+      "width": "1"
+    },
+    "Omega0_TREADY": {
+      "dir": "in",
+      "width": "1"
+    },
+    "Omega1_TDATA": {
+      "dir": "out",
+      "width": "32"
+    },
+    "Omega1_TVALID": {
+      "dir": "out",
+      "width": "1"
+    },
+    "Omega1_TREADY": {
+      "dir": "in",
+      "width": "1"
+    }
+  },
+  "ModuleInfo": {
+    "Hierarchy": {
+      "ModuleName": "CarrierTracking",
+      "Instances": [{
+          "ModuleName": "NoiseRand",
+          "InstanceName": "grp_NoiseRand_fu_431",
+          "Instances": [{
+              "ModuleName": "pow_generic_double_s",
+              "InstanceName": "tmp_i_pow_generic_double_s_fu_60"
+            }]
+        }]
+    },
+    "Info": {
+      "pow_generic_double_s": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "1",
+        "isOneStateSeq": "0"
+      },
+      "NoiseRand": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "CarrierTracking": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      }
+    },
+    "Metrics": {
+      "pow_generic_double_s": {
+        "Latency": {
+          "LatencyBest": "0",
+          "LatencyAvg": "0",
+          "LatencyWorst": "0",
+          "PipelineII": "1",
+          "PipelineDepth": "1",
+          "PipelineType": "function"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "4.125"
+        },
+        "Area": {
+          "FF": "0",
+          "LUT": "610",
+          "BRAM_18K": "0",
+          "DSP48E": "0",
+          "URAM": "0"
+        }
+      },
+      "NoiseRand": {
+        "Latency": {
+          "LatencyBest": "11",
+          "LatencyAvg": "11",
+          "LatencyWorst": "11",
+          "PipelineII": "11",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "8.569"
+        },
+        "Area": {
+          "DSP48E": "13",
+          "FF": "850",
+          "LUT": "2297",
+          "BRAM_18K": "0",
+          "URAM": "0"
+        }
+      },
+      "CarrierTracking": {
+        "Latency": {
+          "LatencyBest": "",
+          "LatencyAvg": "",
+          "LatencyWorst": "",
+          "PipelineII": "",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "9.685"
+        },
+        "Loops": [
+          {
+            "Name": "Loop 1",
+            "TripCount": "20000",
+            "Latency": "1540000",
+            "PipelineII": "",
+            "PipelineDepth": "77"
+          },
+          {
+            "Name": "Kalman_recursion_Loop",
+            "TripCount": "",
+            "Latency": "",
+            "PipelineII": "",
+            "PipelineDepth": "86"
+          }
+        ],
+        "Area": {
+          "BRAM_18K": "145",
+          "DSP48E": "97",
+          "FF": "18176",
+          "LUT": "26420",
+          "URAM": "0"
+        }
+      }
+    }
+  },
+  "Sdx": {
+    "Target": "none",
+    "ProfileOption": "0",
+    "ProfileType": "none",
+    "XO": "",
+    "KernelName": "CarrierTracking",
+    "EnableXoSwEmu": "1"
+  },
+  "GenData": {
+    "DataVersion": "0.2",
+    "Time": "2020-09-26 23:41:56 PDT",
+    "ToolName": "vivado_hls",
+    "ToolVersion": "2019.2"
+  }
+}

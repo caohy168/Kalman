@@ -1,0 +1,62 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+    <sourceFile name="">
+        <directive functionName="CarrierTracking" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="ap_vld" value="" positionalBoolean="mode"/>
+                <option name="port" value="DotNumber" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+        <directive functionName="CarrierTracking" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="ap_vld" value="" positionalBoolean="mode"/>
+                <option name="port" value="DeltaThetaInitinital" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+        <directive functionName="CarrierTracking" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="ap_vld" value="" positionalBoolean="mode"/>
+                <option name="port" value="Omega0Initinital" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+        <directive functionName="CarrierTracking" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="ap_vld" value="" positionalBoolean="mode"/>
+                <option name="port" value="Ts" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+        <directive functionName="CarrierTracking" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="ap_vld" value="" positionalBoolean="mode"/>
+                <option name="port" value="Omega1Initinital" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+        <directive functionName="CarrierTracking" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="axis" value="" positionalBoolean="mode"/>
+                <option name="register" value="" positionalBoolean="1"/>
+                <option name="both" value="" positionalBoolean="register_mode"/>
+                <option name="port" value="Omega0" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+        <directive functionName="CarrierTracking" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="axis" value="" positionalBoolean="mode"/>
+                <option name="register" value="" positionalBoolean="1"/>
+                <option name="both" value="" positionalBoolean="register_mode"/>
+                <option name="port" value="Omega1" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+        <directive functionName="CarrierTracking" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="axis" value="" positionalBoolean="mode"/>
+                <option name="register" value="" positionalBoolean="1"/>
+                <option name="both" value="" positionalBoolean="register_mode"/>
+                <option name="port" value="DetaTheta" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+        <directive functionName="CarrierTracking" label="Kalman_recursion_Loop" functionLabel="">
+            <pragma name="LOOP_FLATTEN"/>
+        </directive>
+    </sourceFile>
+</AutoPilot:ProjectResources>
+

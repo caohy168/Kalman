@@ -1,0 +1,300 @@
+INFO-FLOW: Workspace /home/caohy/work/Kalman/vivado_hls/KalmanFilter/KalmanHls/KalmanHls/solution2 opened at Mon Sep 28 00:46:13 PDT 2020
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/kintexu/kintexu 
+Execute       source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.lib 
+Execute         source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/plb46.lib 
+Execute           source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/fsl.lib 
+Execute           source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/axi4.lib 
+Execute           source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.lib 
+Execute           source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.lib 
+Execute         source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.lib 
+Execute         source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfft.lib 
+Execute         source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfir.lib 
+Execute       source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
+Execute         source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
+Execute       source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/kintexu/dsp48e2.hlp 
+Execute       source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
+Execute         source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/kintexu/kintexu.gen 
+Execute       source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/fsl.gen 
+Execute         source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/util.gen 
+Execute         source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.gen 
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/kintexu/kintexu_fpv7 
+Execute       source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
+Execute           source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
+Execute           source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/kintexu/kintexu_fpv7.gen 
+Execute       source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xcku040-ffva1156-2-e 
+Execute       ap_part_info -name xcku040-ffva1156-2-e -data single -quiet 
+Command       ap_part_info done; 1.69 sec.
+Execute       ap_part_info -name xcku040-ffva1156-2-e -data info 
+Execute       add_library xilinx/kintexu/kintexu:xcku040:-ffva1156:-2-e 
+Execute         get_default_platform 
+Execute         ap_part_info -data single -name xcku040-ffva1156-2-e 
+Execute         ap_part_info -name xcku040-ffva1156-2-e -data resources 
+Execute         ap_part_info -name xcku040-ffva1156-2-e -data info 
+Execute         ap_part_info -name xcku040-ffva1156-2-e -data info 
+Execute         config_chip_info -quiet -resource {SLICE 30300} {LUT 242400} {FF 484800} {DSP48E 1920} {BRAM 1200} {URAM 0} 
+Execute         ap_part_info -name xcku040-ffva1156-2-e -data info 
+Execute         config_chip_info -quiet -speed medium 
+Execute       add_library xilinx/kintexu/kintexu_fpv7 
+Execute         get_default_platform 
+Execute         open_platform DefaultPlatform 
+Execute         import_lib /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/kintexu/kintexu_fpv7 
+Execute           source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.lib 
+Execute           source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute             source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
+Execute               source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
+Execute               source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute                 source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
+Execute                 source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute               source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
+Execute         source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/kintexu/kintexu_fpv7.gen 
+Execute           source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.gen 
+INFO: [HLS 200-10] Setting target device to 'xcku040-ffva1156-2-e'
+Execute       ap_part_info -name xcku040-ffva1156-2-e -data info 
+Execute       get_default_platform 
+Command     set_part done; 1.82 sec.
+Execute     ap_part_info -data single -name xcku040-ffva1156-2-e 
+Execute     ap_part_info -name xcku040-ffva1156-2-e -data resources 
+Execute     ap_part_info -name xcku040-ffva1156-2-e -data info 
+Execute     ap_part_info -name xcku040-ffva1156-2-e -data info 
+Execute     config_chip_info -quiet -resource {SLICE 30300} {LUT 242400} {FF 484800} {DSP48E 1920} {BRAM 1200} {URAM 0} 
+Execute     ap_part_info -name xcku040-ffva1156-2-e -data info 
+Execute     config_chip_info -quiet -speed medium 
+Execute     config_array_partition -auto_partition_threshold=4 
+INFO: [XFORM 203-102] Size-based automatic array partition enabled: cut-off elements per dimension is 4.
+Execute     config_array_partition -auto_promotion_threshold=64 
+INFO: [XFORM 203-102] Automatic array promotion enabled: cut-off elements per dimension is 64.
+Execute     config_array_partition -include_extern_globals=0 
+INFO: [XFORM 203-102] Do not partition external global variables.
+Execute     config_array_partition -include_ports=0 
+INFO: [XFORM 203-102] Do not partition I/O variables.
+Execute     config_array_partition -maximum_size=20480 
+INFO: [XFORM 203-101] Allowed max sub elements number after partition is 20480.
+Execute     config_array_partition -scalarize_all=0 
+Execute     config_array_partition -throughput_driven=1 
+INFO: [XFORM 203-102] Enabled automatic array partitioning for throughput optimization.
+Execute     config_rtl -encoding=auto 
+Execute     config_rtl -kernel_profile=0 
+Execute     config_rtl -module_auto_prefix=0 
+Execute     config_rtl -mult_keep_attribute=0 
+Execute     config_rtl -reset=control 
+Execute     config_rtl -reset_async=0 
+Execute     config_rtl -reset_level=high 
+Execute     config_rtl -verbose=0 
+Execute     config_export -description Kalman Filter 
+Execute     config_export -display_name=Kalman 
+Execute     config_export -format=ip_catalog 
+Execute     config_export -library=hls 
+Execute     config_export -rtl=verilog 
+Execute     config_export -vendor=THZ 
+Execute     config_export -version=1.0 
+Execute     config_export -vivado_optimization_level=2 
+Execute       get_config_export -vivado_impl_strategy 
+Execute       get_config_export -vivado_phys_opt 
+Execute     config_export -vivado_phys_opt=place 
+Execute     config_export -vivado_report_level=0 
+Command   open_solution done; 2.01 sec.
+Execute   set_part xcku040-ffva1156-2-e 
+Execute     ap_part_info -name xcku040-ffva1156-2-e -data single -quiet 
+Execute     ap_part_info -name xcku040-ffva1156-2-e -data info 
+Execute     add_library xilinx/kintexu/kintexu:xcku040:-ffva1156:-2-e 
+Execute       get_default_platform 
+Execute       ap_part_info -data single -name xcku040-ffva1156-2-e 
+Execute       ap_part_info -name xcku040-ffva1156-2-e -data resources 
+Execute       ap_part_info -name xcku040-ffva1156-2-e -data info 
+Execute       ap_part_info -name xcku040-ffva1156-2-e -data info 
+Execute       config_chip_info -quiet -resource {SLICE 30300} {LUT 242400} {FF 484800} {DSP48E 1920} {BRAM 1200} {URAM 0} 
+Execute       ap_part_info -name xcku040-ffva1156-2-e -data info 
+Execute       config_chip_info -quiet -speed medium 
+Execute     add_library xilinx/kintexu/kintexu_fpv7 
+Execute       get_default_platform 
+Execute       open_platform DefaultPlatform 
+Execute       import_lib /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/kintexu/kintexu_fpv7 
+Execute         source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.lib 
+Execute         source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute           source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
+Execute             source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
+Execute             source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute               source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
+Execute               source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute             source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
+Execute       source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/kintexu/kintexu_fpv7.gen 
+Execute         source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     ap_part_info -name xcku040-ffva1156-2-e -data info 
+Execute     get_default_platform 
+Command   set_part done; 0.13 sec.
+Execute   create_clock -period 10 -name default 
+Execute   config_array_partition -auto_partition_threshold 4 -auto_promotion_threshold 64 -include_extern_globals=0 -include_ports=0 -maximum_size 20480 -scalarize_all=0 -throughput_driven 
+INFO: [XFORM 203-102] Automatic array promotion enabled: cut-off elements per dimension is 64.
+INFO: [XFORM 203-102] Size-based automatic array partition enabled: cut-off elements per dimension is 4.
+INFO: [XFORM 203-101] Allowed max sub elements number after partition is 20480.
+INFO: [XFORM 203-102] Enabled automatic array partitioning for throughput optimization.
+INFO: [XFORM 203-102] Do not partition external global variables.
+INFO: [XFORM 203-102] Do not partition I/O variables.
+Execute   config_rtl -encoding auto -kernel_profile=0 -module_auto_prefix=0 -mult_keep_attribute=0 -reset control -reset_async=0 -reset_level high -verbose=0 
+Execute   config_export -description Kalman Filter -display_name Kalman -format ip_catalog -library hls -rtl verilog -vendor THZ -version 1.0 -vivado_optimization_level 2 -vivado_phys_opt place -vivado_report_level 0 
+Execute     get_config_export -vivado_impl_strategy 
+Execute   source ./KalmanHls/solution2/directives.tcl 
+Execute     set_directive_interface -mode ap_vld CarrierTracking DotNumber 
+INFO-FLOW: Setting directive 'INTERFACE' ap_vld=positionBoolean0mode port=positionBooleanTextRequiredDotNumber 
+Execute     set_directive_interface -mode ap_vld CarrierTracking DeltaThetaInitinital 
+INFO-FLOW: Setting directive 'INTERFACE' ap_vld=positionBoolean0mode port=positionBooleanTextRequiredDotNumber 
+INFO-FLOW: Setting directive 'INTERFACE' ap_vld=positionBoolean0mode port=positionBooleanTextRequiredDeltaThetaInitinital 
+Execute     set_directive_interface -mode ap_vld CarrierTracking Omega0Initinital 
+INFO-FLOW: Setting directive 'INTERFACE' ap_vld=positionBoolean0mode port=positionBooleanTextRequiredDotNumber 
+INFO-FLOW: Setting directive 'INTERFACE' ap_vld=positionBoolean0mode port=positionBooleanTextRequiredDeltaThetaInitinital 
+INFO-FLOW: Setting directive 'INTERFACE' ap_vld=positionBoolean0mode port=positionBooleanTextRequiredOmega0Initinital 
+Execute     set_directive_interface -mode ap_vld CarrierTracking Ts 
+INFO-FLOW: Setting directive 'INTERFACE' ap_vld=positionBoolean0mode port=positionBooleanTextRequiredDotNumber 
+INFO-FLOW: Setting directive 'INTERFACE' ap_vld=positionBoolean0mode port=positionBooleanTextRequiredDeltaThetaInitinital 
+INFO-FLOW: Setting directive 'INTERFACE' ap_vld=positionBoolean0mode port=positionBooleanTextRequiredOmega0Initinital 
+INFO-FLOW: Setting directive 'INTERFACE' ap_vld=positionBoolean0mode port=positionBooleanTextRequiredTs 
+Execute     set_directive_interface -mode ap_vld CarrierTracking Omega1Initinital 
+INFO-FLOW: Setting directive 'INTERFACE' ap_vld=positionBoolean0mode port=positionBooleanTextRequiredDotNumber 
+INFO-FLOW: Setting directive 'INTERFACE' ap_vld=positionBoolean0mode port=positionBooleanTextRequiredDeltaThetaInitinital 
+INFO-FLOW: Setting directive 'INTERFACE' ap_vld=positionBoolean0mode port=positionBooleanTextRequiredOmega0Initinital 
+INFO-FLOW: Setting directive 'INTERFACE' ap_vld=positionBoolean0mode port=positionBooleanTextRequiredTs 
+INFO-FLOW: Setting directive 'INTERFACE' ap_vld=positionBoolean0mode port=positionBooleanTextRequiredOmega1Initinital 
+Execute     set_directive_interface -mode axis -register -register_mode both CarrierTracking Omega0 
+INFO-FLOW: Setting directive 'INTERFACE' ap_vld=positionBoolean0mode port=positionBooleanTextRequiredDotNumber 
+INFO-FLOW: Setting directive 'INTERFACE' ap_vld=positionBoolean0mode port=positionBooleanTextRequiredDeltaThetaInitinital 
+INFO-FLOW: Setting directive 'INTERFACE' ap_vld=positionBoolean0mode port=positionBooleanTextRequiredOmega0Initinital 
+INFO-FLOW: Setting directive 'INTERFACE' ap_vld=positionBoolean0mode port=positionBooleanTextRequiredTs 
+INFO-FLOW: Setting directive 'INTERFACE' ap_vld=positionBoolean0mode port=positionBooleanTextRequiredOmega1Initinital 
+INFO-FLOW: Setting directive 'INTERFACE' axis=positionBoolean0mode register=positionBoolean1 both=positionBoolean0register_mode port=positionBooleanTextRequiredOmega0 
+Execute     set_directive_interface -mode axis -register -register_mode both CarrierTracking Omega1 
+INFO-FLOW: Setting directive 'INTERFACE' ap_vld=positionBoolean0mode port=positionBooleanTextRequiredDotNumber 
+INFO-FLOW: Setting directive 'INTERFACE' ap_vld=positionBoolean0mode port=positionBooleanTextRequiredDeltaThetaInitinital 
+INFO-FLOW: Setting directive 'INTERFACE' ap_vld=positionBoolean0mode port=positionBooleanTextRequiredOmega0Initinital 
+INFO-FLOW: Setting directive 'INTERFACE' ap_vld=positionBoolean0mode port=positionBooleanTextRequiredTs 
+INFO-FLOW: Setting directive 'INTERFACE' ap_vld=positionBoolean0mode port=positionBooleanTextRequiredOmega1Initinital 
+INFO-FLOW: Setting directive 'INTERFACE' axis=positionBoolean0mode register=positionBoolean1 both=positionBoolean0register_mode port=positionBooleanTextRequiredOmega0 
+INFO-FLOW: Setting directive 'INTERFACE' axis=positionBoolean0mode register=positionBoolean1 both=positionBoolean0register_mode port=positionBooleanTextRequiredOmega1 
+Execute     set_directive_interface -mode axis -register -register_mode both CarrierTracking DetaTheta 
+INFO-FLOW: Setting directive 'INTERFACE' ap_vld=positionBoolean0mode port=positionBooleanTextRequiredDotNumber 
+INFO-FLOW: Setting directive 'INTERFACE' ap_vld=positionBoolean0mode port=positionBooleanTextRequiredDeltaThetaInitinital 
+INFO-FLOW: Setting directive 'INTERFACE' ap_vld=positionBoolean0mode port=positionBooleanTextRequiredOmega0Initinital 
+INFO-FLOW: Setting directive 'INTERFACE' ap_vld=positionBoolean0mode port=positionBooleanTextRequiredTs 
+INFO-FLOW: Setting directive 'INTERFACE' ap_vld=positionBoolean0mode port=positionBooleanTextRequiredOmega1Initinital 
+INFO-FLOW: Setting directive 'INTERFACE' axis=positionBoolean0mode register=positionBoolean1 both=positionBoolean0register_mode port=positionBooleanTextRequiredOmega0 
+INFO-FLOW: Setting directive 'INTERFACE' axis=positionBoolean0mode register=positionBoolean1 both=positionBoolean0register_mode port=positionBooleanTextRequiredOmega1 
+INFO-FLOW: Setting directive 'INTERFACE' axis=positionBoolean0mode register=positionBoolean1 both=positionBoolean0register_mode port=positionBooleanTextRequiredDetaTheta 
+Execute     set_directive_loop_flatten CarrierTracking/Kalman_recursion_Loop 
+INFO-FLOW: Setting directive 'INTERFACE' ap_vld=positionBoolean0mode port=positionBooleanTextRequiredDotNumber 
+INFO-FLOW: Setting directive 'INTERFACE' ap_vld=positionBoolean0mode port=positionBooleanTextRequiredDeltaThetaInitinital 
+INFO-FLOW: Setting directive 'INTERFACE' ap_vld=positionBoolean0mode port=positionBooleanTextRequiredOmega0Initinital 
+INFO-FLOW: Setting directive 'INTERFACE' ap_vld=positionBoolean0mode port=positionBooleanTextRequiredTs 
+INFO-FLOW: Setting directive 'INTERFACE' ap_vld=positionBoolean0mode port=positionBooleanTextRequiredOmega1Initinital 
+INFO-FLOW: Setting directive 'INTERFACE' axis=positionBoolean0mode register=positionBoolean1 both=positionBoolean0register_mode port=positionBooleanTextRequiredOmega0 
+INFO-FLOW: Setting directive 'INTERFACE' axis=positionBoolean0mode register=positionBoolean1 both=positionBoolean0register_mode port=positionBooleanTextRequiredOmega1 
+INFO-FLOW: Setting directive 'INTERFACE' axis=positionBoolean0mode register=positionBoolean1 both=positionBoolean0register_mode port=positionBooleanTextRequiredDetaTheta 
+INFO-FLOW: Setting directive 'LOOP_FLATTEN' flatten=positionBooleanCmd 
+Execute   csynth_design 
+Execute     get_config_compile -dump_cfg 
+Execute     get_config_compile -effort 
+Execute     get_config_compile -enable_clang39 
+Execute     get_config_compile -g 
+Execute     get_config_compile -ng 
+Execute     get_config_compile -opt_fp 
+Execute     get_config_compile -skip_cdt 
+Execute     get_config_compile -skip_syncheck 
+Execute     get_config_compile -skip_transform 
+Execute     get_config_compile -keep_printf 
+Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+Execute       get_config_schedule -relax_ii_for_timing 
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+Execute       get_config_schedule -suppress_dependence_error_break 
+INFO: [HLS 200-10] Analyzing design file '../Kalman.cpp' ... 
+INFO-FLOW: Compiling one TU...
+Execute       is_m_axi_addr64 
+INFO-FLOW: Handling ../Kalman.cpp as C++
+Execute       ap_part_info -name xcku040-ffva1156-2-e -data info 
+Execute       is_encrypted ../Kalman.cpp 
+Execute       ap_part_info -name xcku040-ffva1156-2-e -data info 
+INFO-FLOW: Running: GCC PP
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "/tools/Xilinx/Vivado/2019.2/lnx64/tools/gcc" -hls  -fno-exceptions  -D__llvm__  -E "../Kalman.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/tools/Xilinx/Vivado/2019.2/common/technology/autopilot" -I "/tools/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E2__  -o "/home/caohy/work/Kalman/vivado_hls/KalmanFilter/KalmanHls/KalmanHls/solution2/.autopilot/db/Kalman.pp.0.cpp" 
+INFO-FLOW: exec /tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /tools/Xilinx/Vivado/2019.2/lnx64/tools/gcc -hls -fno-exceptions -D__llvm__ -E ../Kalman.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vivado/2019.2/common/technology/autopilot -I /tools/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -o /home/caohy/work/Kalman/vivado_hls/KalmanFilter/KalmanHls/KalmanHls/solution2/.autopilot/db/Kalman.pp.0.cpp
+Command       clang done; 1.53 sec.
+Execute       tidy_31 xilinx-xfmat-array-geometry /home/caohy/work/Kalman/vivado_hls/KalmanFilter/KalmanHls/KalmanHls/solution2/.autopilot/db/Kalman.pp.0.cpp std=gnu++98 
+INFO-FLOW: exec /tools/Xilinx/Vivado/2019.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix /home/caohy/work/Kalman/vivado_hls/KalmanFilter/KalmanHls/KalmanHls/solution2/.autopilot/db/Kalman.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+INFO-FLOW: Syntax Checking before pre-processing...
+Execute       clang -syntaxcheck -src /home/caohy/work/Kalman/vivado_hls/KalmanFilter/KalmanHls/KalmanHls/solution2/.autopilot/db/Kalman.pp.0.cpp  -fno-limit-debug-info -gcc-toolchain "/tools/Xilinx/Vivado/2019.2/lnx64/tools/gcc" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/tools/Xilinx/Vivado/2019.2/common/technology/autopilot" -I "/tools/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E2__  "/home/caohy/work/Kalman/vivado_hls/KalmanFilter/KalmanHls/KalmanHls/solution2/.autopilot/db/Kalman.pp.0.cpp"  -o "/home/caohy/work/Kalman/vivado_hls/KalmanFilter/KalmanHls/KalmanHls/solution2/.autopilot/db/useless.bc"  
+INFO-FLOW: exec /tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /tools/Xilinx/Vivado/2019.2/lnx64/tools/gcc -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vivado/2019.2/common/technology/autopilot -I /tools/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ /home/caohy/work/Kalman/vivado_hls/KalmanFilter/KalmanHls/KalmanHls/solution2/.autopilot/db/Kalman.pp.0.cpp -o /home/caohy/work/Kalman/vivado_hls/KalmanFilter/KalmanHls/KalmanHls/solution2/.autopilot/db/useless.bc
+Command       clang done; 1.51 sec.
+INFO-FLOW: Done: GCC PP time: 3.1 seconds per iteration
+INFO-FLOW: Setting directive 'INTERFACE' ap_vld=positionBoolean0mode port=positionBooleanTextRequiredDotNumber 
+INFO-FLOW: Setting directive 'INTERFACE' ap_vld=positionBoolean0mode port=positionBooleanTextRequiredDeltaThetaInitinital 
+INFO-FLOW: Setting directive 'INTERFACE' ap_vld=positionBoolean0mode port=positionBooleanTextRequiredOmega0Initinital 
+INFO-FLOW: Setting directive 'INTERFACE' ap_vld=positionBoolean0mode port=positionBooleanTextRequiredTs 
+INFO-FLOW: Setting directive 'INTERFACE' ap_vld=positionBoolean0mode port=positionBooleanTextRequiredOmega1Initinital 
+INFO-FLOW: Setting directive 'INTERFACE' axis=positionBoolean0mode register=positionBoolean1 both=positionBoolean0register_mode port=positionBooleanTextRequiredOmega0 
+INFO-FLOW: Setting directive 'INTERFACE' axis=positionBoolean0mode register=positionBoolean1 both=positionBoolean0register_mode port=positionBooleanTextRequiredOmega1 
+INFO-FLOW: Setting directive 'INTERFACE' axis=positionBoolean0mode register=positionBoolean1 both=positionBoolean0register_mode port=positionBooleanTextRequiredDetaTheta 
+INFO-FLOW: Setting directive 'LOOP_FLATTEN' flatten=positionBooleanCmd 
+Execute       source /tools/Xilinx/Vivado/2019.2/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute       source /tools/Xilinx/Vivado/2019.2/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute         source /tools/Xilinx/Vivado/2019.2/tps/tcl/tcllib1.11.1/try/try.tcl 
+INFO-FLOW: Setting directive 'INTERFACE' ap_vld=positionBoolean0mode port=positionBooleanTextRequiredDotNumber 
+INFO-FLOW: Setting directive 'INTERFACE' ap_vld=positionBoolean0mode port=positionBooleanTextRequiredDeltaThetaInitinital 
+INFO-FLOW: Setting directive 'INTERFACE' ap_vld=positionBoolean0mode port=positionBooleanTextRequiredOmega0Initinital 
+INFO-FLOW: Setting directive 'INTERFACE' ap_vld=positionBoolean0mode port=positionBooleanTextRequiredTs 
+INFO-FLOW: Setting directive 'INTERFACE' ap_vld=positionBoolean0mode port=positionBooleanTextRequiredOmega1Initinital 
+INFO-FLOW: Setting directive 'INTERFACE' axis=positionBoolean0mode register=positionBoolean1 both=positionBoolean0register_mode port=positionBooleanTextRequiredOmega0 
+INFO-FLOW: Setting directive 'INTERFACE' axis=positionBoolean0mode register=positionBoolean1 both=positionBoolean0register_mode port=positionBooleanTextRequiredOmega1 
+INFO-FLOW: Setting directive 'INTERFACE' axis=positionBoolean0mode register=positionBoolean1 both=positionBoolean0register_mode port=positionBooleanTextRequiredDetaTheta 
+INFO-FLOW: Setting directive 'LOOP_FLATTEN' flatten=positionBooleanCmd 
+Execute       list_core -type functional_unit 
+Execute       tidy_31 xilinx-systemc-detector /home/caohy/work/Kalman/vivado_hls/KalmanFilter/KalmanHls/KalmanHls/solution2/.autopilot/db/Kalman.pp.0.cpp std=gnu++98 -directive=/home/caohy/work/Kalman/vivado_hls/KalmanFilter/KalmanHls/KalmanHls/solution2/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec /tools/Xilinx/Vivado/2019.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=/home/caohy/work/Kalman/vivado_hls/KalmanFilter/KalmanHls/KalmanHls/solution2/.autopilot/db/.systemc_flag -quiet -fix-errors /home/caohy/work/Kalman/vivado_hls/KalmanFilter/KalmanHls/KalmanHls/solution2/.autopilot/db/Kalman.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+INFO-FLOW: Running: tidy-3.1 CDT preprocess
+Execute       tidy_31 xilinx-directive2pragma /home/caohy/work/Kalman/vivado_hls/KalmanFilter/KalmanHls/KalmanHls/solution2/.autopilot/db/Kalman.pp.0.cpp std=gnu++98 -directive=/home/caohy/work/Kalman/vivado_hls/KalmanFilter/KalmanHls/KalmanHls/solution2/.autopilot/db/all.directive.json 
+INFO-FLOW: exec /tools/Xilinx/Vivado/2019.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=/home/caohy/work/Kalman/vivado_hls/KalmanFilter/KalmanHls/KalmanHls/solution2/.autopilot/db/all.directive.json -quiet -fix-errors /home/caohy/work/Kalman/vivado_hls/KalmanFilter/KalmanHls/KalmanHls/solution2/.autopilot/db/Kalman.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr /tools/Xilinx/Vivado/2019.2/lnx64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=/home/caohy/work/Kalman/vivado_hls/KalmanFilter/KalmanHls/KalmanHls/solution2/.autopilot/db/xilinx-dataflow-lawyer.Kalman.pp.0.cpp.diag.yml /home/caohy/work/Kalman/vivado_hls/KalmanFilter/KalmanHls/KalmanHls/solution2/.autopilot/db/Kalman.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 -fstrict-dataflow > /home/caohy/work/Kalman/vivado_hls/KalmanFilter/KalmanHls/KalmanHls/solution2/.autopilot/db/xilinx-dataflow-lawyer.Kalman.pp.0.cpp.out.log 2> /home/caohy/work/Kalman/vivado_hls/KalmanFilter/KalmanHls/KalmanHls/solution2/.autopilot/db/xilinx-dataflow-lawyer.Kalman.pp.0.cpp.err.log 
+Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry /home/caohy/work/Kalman/vivado_hls/KalmanFilter/KalmanHls/KalmanHls/solution2/.autopilot/db/Kalman.pp.0.cpp std=gnu++98 
+Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vivado/2019.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=/home/caohy/work/Kalman/vivado_hls/KalmanFilter/KalmanHls/KalmanHls/solution2/.autopilot/db/tidy-3.1.Kalman.pp.0.cpp.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors /home/caohy/work/Kalman/vivado_hls/KalmanFilter/KalmanHls/KalmanHls/solution2/.autopilot/db/Kalman.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > /home/caohy/work/Kalman/vivado_hls/KalmanFilter/KalmanHls/KalmanHls/solution2/.autopilot/db/tidy-3.1.Kalman.pp.0.cpp.out.log 2> /home/caohy/work/Kalman/vivado_hls/KalmanFilter/KalmanHls/KalmanHls/solution2/.autopilot/db/tidy-3.1.Kalman.pp.0.cpp.err.log 
+Execute         source /tools/Xilinx/Vivado/2019.2/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
+Execute           source /tools/Xilinx/Vivado/2019.2/tps/tcl/tcllib1.11.1/cmdline/cmdline.tcl 
+Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vivado/2019.2/lnx64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter /home/caohy/work/Kalman/vivado_hls/KalmanFilter/KalmanHls/KalmanHls/solution2/.autopilot/db/Kalman.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > /home/caohy/work/Kalman/vivado_hls/KalmanFilter/KalmanHls/KalmanHls/solution2/.autopilot/db/xilinx-legacy-rewriter.Kalman.pp.0.cpp.out.log 2> /home/caohy/work/Kalman/vivado_hls/KalmanFilter/KalmanHls/KalmanHls/solution2/.autopilot/db/xilinx-legacy-rewriter.Kalman.pp.0.cpp.err.log 
+Command       tidy_31 done; 0.12 sec.
+INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 0.2 seconds per iteration
+INFO-FLOW: Pragma Handling...
+Execute       tidy_31 xilinx-ssdm-intrinsics-arguments /home/caohy/work/Kalman/vivado_hls/KalmanFilter/KalmanHls/KalmanHls/solution2/.autopilot/db/Kalman.pragma.1.cpp std=gnu++98 
+INFO-FLOW: exec /tools/Xilinx/Vivado/2019.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors /home/caohy/work/Kalman/vivado_hls/KalmanFilter/KalmanHls/KalmanHls/solution2/.autopilot/db/Kalman.pragma.1.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Execute       ap_part_info -name xcku040-ffva1156-2-e -data info 
+INFO-FLOW: Processing labels
+Execute       clang -src /home/caohy/work/Kalman/vivado_hls/KalmanFilter/KalmanHls/KalmanHls/solution2/.autopilot/db/Kalman.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain /tools/Xilinx/Vivado/2019.2/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "/home/caohy/work/Kalman/vivado_hls/KalmanFilter/KalmanHls/KalmanHls/solution2/.autopilot/db/Kalman.pragma.2.cpp"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/tools/Xilinx/Vivado/2019.2/common/technology/autopilot" -I "/tools/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -g -o "/home/caohy/work/Kalman/vivado_hls/KalmanFilter/KalmanHls/KalmanHls/solution2/.autopilot/db/Kalman.bc" 
+INFO-FLOW: exec /tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /tools/Xilinx/Vivado/2019.2/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w /home/caohy/work/Kalman/vivado_hls/KalmanFilter/KalmanHls/KalmanHls/solution2/.autopilot/db/Kalman.pragma.2.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vivado/2019.2/common/technology/autopilot -I /tools/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -g -o /home/caohy/work/Kalman/vivado_hls/KalmanFilter/KalmanHls/KalmanHls/solution2/.autopilot/db/Kalman.bc

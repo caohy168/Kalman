@@ -1,0 +1,732 @@
+/*
+
+Xilinx Vivado v2019.2 (64-bit) [Major: 2019, Minor: 2]
+SW Build: 2708876 on Wed Nov  6 21:39:14 MST 2019
+IP Build: 2700528 on Thu Nov  7 00:09:20 MST 2019
+
+Process ID (PID): 128331
+License: Customer
+
+Current time: 	Sun Sep 27 00:00:48 PDT 2020
+Time zone: 	Pacific Standard Time (America/Los_Angeles)
+
+OS: Ubuntu
+OS Version: 5.4.0-47-generic
+OS Architecture: amd64
+Available processors (cores): 16
+
+Display: :1
+Screen size: 1920x1440
+Screen resolution (DPI): 100
+Available screens: 1
+Available disk space: 724 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	/tools/Xilinx/Vivado/2019.2/tps/lnx64/jre9.0.4
+Java executable location: 	/tools/Xilinx/Vivado/2019.2/tps/lnx64/jre9.0.4/bin/java
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	root
+User home directory: /root
+User working directory: /home/caohy/work/Kalman/vivado
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /tools/Xilinx/Vivado
+HDI_APPROOT: /tools/Xilinx/Vivado/2019.2
+RDI_DATADIR: /tools/Xilinx/Vivado/2019.2/data
+RDI_BINDIR: /tools/Xilinx/Vivado/2019.2/bin
+
+Vivado preferences file location: /root/.Xilinx/Vivado/2019.2/vivado.xml
+Vivado preferences directory: /root/.Xilinx/Vivado/2019.2/
+Vivado layouts directory: /root/.Xilinx/Vivado/2019.2/layouts
+PlanAhead jar file location: 	/tools/Xilinx/Vivado/2019.2/lib/classes/planAhead.jar
+Vivado log file location: 	/home/caohy/work/Kalman/vivado/vivado.log
+Vivado journal file location: 	/home/caohy/work/Kalman/vivado/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-128331-ubuntu
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /tools/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_DSP: /tools/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_PLANAHEAD: /tools/Xilinx/Vivado/2019.2
+XILINX_VITIS: /tools/Vitis/Vitis/2019.2
+XILINX_VIVADO: /tools/Xilinx/Vivado/2019.2
+XILINX_VIVADO_HLS: /tools/Xilinx/Vivado/2019.2
+
+
+GUI allocated memory:	199 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 978 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// HMemoryUtils.trashcanNow. Engine heap size: 946 MB. GUI used memory: 50 MB. Current time: 9/27/20, 12:00:50 AM PDT
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+selectList(PAResourceQtoS.SyntheticaGettingStartedView_RECENT_PROJECTS, "/home/caohy/work/Kalman/vivado/KalmanIPExample/KalmanIPExample.xpr", 4); // r (O, cr)
+// [GUI Memory]: 90 MB (+91708kb) [00:00:59]
+// [Engine Memory]: 959 MB (+854030kb) [00:00:59]
+// bB (cr):  Open Project : addNotify
+// Opening Vivado Project: /home/caohy/work/Kalman/vivado/KalmanIPExample/KalmanIPExample.xpr. Version: Vivado v2019.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project /home/caohy/work/Kalman/vivado/KalmanIPExample/KalmanIPExample.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 1,121 MB (+119866kb) [00:01:05]
+// [GUI Memory]: 111 MB (+17706kb) [00:01:06]
+// WARNING: HEventQueue.dispatchEvent() is taking  3778 ms.
+// Tcl Message: open_project /home/caohy/work/Kalman/vivado/KalmanIPExample/KalmanIPExample.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/caohy/work/Kalman/vivado_hls/KalmanFilter/KalmanHls/KalmanHls/solution2/impl/ip'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2019.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,172 MB. GUI used memory: 61 MB. Current time: 9/27/20, 12:01:47 AM PDT
+// Tcl Message: open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:08 . Memory (MB): peak = 6743.449 ; gain = 205.727 ; free physical = 50342 ; free virtual = 61591 
+// Project name: KalmanIPExample; location: /home/caohy/work/Kalman/vivado/KalmanIPExample; part: xcku040-ffva1156-2-e
+// [Engine Memory]: 1,178 MB (+373kb) [00:01:09]
+dismissDialog("Open Project"); // bB (cr)
+// [GUI Memory]: 117 MB (+72kb) [00:01:11]
+// [Engine Memory]: 1,385 MB (+155814kb) [00:01:11]
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, KalmanIPExample (KalmanIPExample.sv)]", 1); // B (F, cr)
+// PAPropertyPanels.initPanels (clk_wiz_0.xci) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, KalmanIPExample (KalmanIPExample.sv), clk_wiz_0 : clk_wiz_0 (clk_wiz_0.xci)]", 2, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, KalmanIPExample (KalmanIPExample.sv), CarrierTrack : CarrierTrack (CarrierTrack.xci)]", 3, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, KalmanIPExample (KalmanIPExample.sv), CarrierTrack : CarrierTrack (CarrierTrack.xci)]", 3, false, false, false, false, true, false); // B (F, cr) - Popup Trigger
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, IP Catalog]", 4, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_CORE_GEN
+// bB (SwingUtilities.SharedOwnerFrame):  Open IP Catalog : addNotify
+dismissDialog("Open IP Catalog"); // bB (SwingUtilities.SharedOwnerFrame)
+// Elapsed time: 25 seconds
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0); // L (O, cr)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "VIVADO HLS IP ;  ;  ;  ; ", 1); // L (O, cr)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Kalman ; AXI4-Stream ; Pre-Production ; Included ; THZ:hls:CarrierTracking:1.0", 2, "Kalman", 0, false); // L (O, cr)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Kalman ; AXI4-Stream ; Pre-Production ; Included ; THZ:hls:CarrierTracking:1.0", 2, "Kalman", 0, false); // L (O, cr)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Kalman ; AXI4-Stream ; Pre-Production ; Included ; THZ:hls:CarrierTracking:1.0", 2); // L (O, cr)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Kalman ; AXI4-Stream ; Pre-Production ; Included ; THZ:hls:CarrierTracking:1.0", 2, "Kalman", 0, false, false, false, false, false, true); // L (O, cr) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_CORE
+// TclEventType: LOAD_FEATURE
+// r (cr): Customize IP: addNotify
+// Elapsed time: 13 seconds
+setText("Component Name", "CarrierTracking0"); // D (V, r)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+// TclEventType: CREATE_IP_CORE
+// TclEventType: REPORT_IP_STATUS_STALE
+dismissDialog("Customize IP"); // r (cr)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: create_ip -name CarrierTracking -vendor THZ -library hls -version 1.0 -module_name CarrierTracking0 
+// TclEventType: FILESET_UPDATE_IP
+// Tcl Message: set_property -dict [list CONFIG.Component_Name {CarrierTracking0}] [get_ips CarrierTracking0] 
+// bB (cr):  Customize IP : addNotify
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target {instantiation_template} [get_files /home/caohy/work/Kalman/vivado/KalmanIPExample/KalmanIPExample.srcs/sources_1/ip/CarrierTracking0/CarrierTracking0.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'CarrierTracking0'... 
+// TclEventType: FILE_SET_CHANGE
+// aI (cr): Generate Output Products: addNotify
+dismissDialog("Customize IP"); // bB (cr)
+// [GUI Memory]: 129 MB (+6453kb) [00:02:15]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,319 MB. GUI used memory: 69 MB. Current time: 9/27/20, 12:02:55 AM PDT
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (aI)
+// bB (cr):  Managing Output Products : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target all [get_files  /home/caohy/work/Kalman/vivado/KalmanIPExample/KalmanIPExample.srcs/sources_1/ip/CarrierTracking0/CarrierTracking0.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'CarrierTracking0'... INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'CarrierTracking0'... 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'CarrierTracking0'... 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all CarrierTracking0] } 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP CarrierTracking0, cache-ID = 30600ead96cb6d7f; cache size = 345.586 MB. 
+// TclEventType: OOC_IP_CACHE_USED
+// Tcl Message: config_ip_cache: Time (s): cpu = 00:00:10 ; elapsed = 00:00:21 . Memory (MB): peak = 6878.121 ; gain = 42.004 ; free physical = 50140 ; free virtual = 61554 
+// TclEventType: PROJ_DESIGN_MODE_SET
+// Tcl Message: export_ip_user_files -of_objects [get_files /home/caohy/work/Kalman/vivado/KalmanIPExample/KalmanIPExample.srcs/sources_1/ip/CarrierTracking0/CarrierTracking0.xci] -no_script -sync -force -quiet 
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] /home/caohy/work/Kalman/vivado/KalmanIPExample/KalmanIPExample.srcs/sources_1/ip/CarrierTracking0/CarrierTracking0.xci] 
+// Tcl Message: INFO: [Vivado 12-3453] The given sub-design is up-to-date, no action was taken.  If a run is still desired, use the '-force' option for the file:'/home/caohy/work/Kalman/vivado/KalmanIPExample/KalmanIPExample.srcs/sources_1/ip/CarrierTracking0/CarrierTracking0.xci' 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Elapsed time: 33 seconds
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, KalmanIPExample (KalmanIPExample.sv)]", 1, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, KalmanIPExample (KalmanIPExample.sv)]", 1, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+selectCodeEditor("KalmanIPExample.sv", 85, 838); // ch (w, cr)
+typeControlKey((HResource) null, "KalmanIPExample.sv", 'c'); // ch (w, cr)
+typeControlKey((HResource) null, "KalmanIPExample.sv", 'v'); // ch (w, cr)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E (f, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// [Engine Memory]: 1,464 MB (+10353kb) [00:03:17]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CarrierTrack (CarrierTrack.xci)]", 2, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CarrierTrack (CarrierTrack.xci)]", 2, false, false, false, false, true, false); // B (F, cr) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ai (ao, cr)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cr): Remove Sources: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 1,464 MB. GUI used memory: 73 MB. Current time: 9/27/20, 12:04:00 AM PDT
+selectCheckBox(PAResourceQtoS.RemoveSourcesDialog_ALSO_DELETE, "Also delete the project local file/directory from disk", true); // g (Q, aE): TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (cr)
+// Tcl Message: export_ip_user_files -of_objects  [get_files /home/caohy/work/Kalman/vivado/KalmanIPExample/KalmanIPExample.srcs/sources_1/ip/CarrierTrack/CarrierTrack.xci] -no_script -reset -force -quiet 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// aE (cr): Remove Sources: addNotify
+// bB (aE):  Remove Sources : addNotify
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// Tcl Message: remove_files  -fileset CarrierTrack /home/caohy/work/Kalman/vivado/KalmanIPExample/KalmanIPExample.srcs/sources_1/ip/CarrierTrack/CarrierTrack.xci 
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: PROJ_DESIGN_MODE_SET
+// Tcl Message: INFO: [Project 1-386] Moving file '/home/caohy/work/Kalman/vivado/KalmanIPExample/KalmanIPExample.srcs/sources_1/ip/CarrierTrack/CarrierTrack.xci' from fileset 'CarrierTrack' to fileset 'sources_1'. 
+dismissDialog("Remove Sources"); // bB (aE)
+// Elapsed time: 63 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, KalmanIPExample (KalmanIPExample.sv)]", 1); // B (F, cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, KalmanIPExample (KalmanIPExample.sv), CarrierTracking0 : CarrierTracking0 (CarrierTracking0.xci)]", 3); // B (F, cr)
+// A (cr): Show IP Hierarchy: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Show IP Hierarchy"); // A (cr)
+// [GUI Memory]: 140 MB (+4592kb) [00:05:01]
+// Elapsed time: 134 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, KalmanIPExample (KalmanIPExample.sv), CarrierTracking0 : CarrierTracking0 (CarrierTracking0.xci), xbip_dsp48_wrapper_v3_0_4(synth) (xbip_dsp48_wrapper_v3_0_vh_rfs.vhd)]", 19, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, KalmanIPExample (KalmanIPExample.sv), CarrierTracking0 : CarrierTracking0 (CarrierTracking0.xci), xbip_dsp48a1_wrapper_v3_0(synth) (xbip_dsp48_wrapper_v3_0_vh_rfs.vhd)]", 20, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, KalmanIPExample (KalmanIPExample.sv), CarrierTracking0 : CarrierTracking0 (CarrierTracking0.xci), xbip_dsp48a_wrapper_v3_0(synth) (xbip_dsp48_wrapper_v3_0_vh_rfs.vhd)]", 21, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, KalmanIPExample (KalmanIPExample.sv), CarrierTracking0 : CarrierTracking0 (CarrierTracking0.xci), xbip_pipe_v3_0_6(xilinx) (xbip_pipe_v3_0_vh_rfs.vhd)]", 16, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, KalmanIPExample (KalmanIPExample.sv), CarrierTracking0 : CarrierTracking0 (CarrierTracking0.xci), regslice_forward (regslice_core.v)]", 9, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, KalmanIPExample (KalmanIPExample.sv), CarrierTracking0 : CarrierTracking0 (CarrierTracking0.xci), regslice_forward_w1 (regslice_core.v)]", 10, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, KalmanIPExample (KalmanIPExample.sv), CarrierTracking0 : CarrierTracking0 (CarrierTracking0.xci), regslice_reverse (regslice_core.v)]", 11, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, KalmanIPExample (KalmanIPExample.sv), CarrierTracking0 : CarrierTracking0 (CarrierTracking0.xci), regslice_reverse_w1 (regslice_core.v)]", 12, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, KalmanIPExample (KalmanIPExample.sv), CarrierTracking0 : CarrierTracking0 (CarrierTracking0.xci), xbip_bram18k_v3_0_6(xilinx) (xbip_bram18k_v3_0_vh_rfs.vhd)]", 13, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, KalmanIPExample (KalmanIPExample.sv), CarrierTracking0 : CarrierTracking0 (CarrierTracking0.xci), CarrierTracking0 (CarrierTracking0.v)]", 6, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, KalmanIPExample (KalmanIPExample.sv), CarrierTracking0 : CarrierTracking0 (CarrierTracking0.xci), floating_point_v7_1_9(xilinx) (floating_point_v7_1_rfs.vhd)]", 7, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, KalmanIPExample (KalmanIPExample.sv), CarrierTracking0 : CarrierTracking0 (CarrierTracking0.xci), mult_gen_v12_0_16(xilinx) (mult_gen_v12_0_vh_rfs.vhd)]", 8, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, KalmanIPExample (KalmanIPExample.sv), CarrierTracking0 : CarrierTracking0 (CarrierTracking0.xci), regslice_forward (regslice_core.v)]", 9, false); // B (F, cr)
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, KalmanIPExample (KalmanIPExample.sv), CarrierTracking0 : CarrierTracking0 (CarrierTracking0.xci)]", 3, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, KalmanIPExample (KalmanIPExample.sv), CarrierTracking0 : CarrierTracking0 (CarrierTracking0.xci)]", 3, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, KalmanIPExample (KalmanIPExample.sv), CarrierTracking0 : CarrierTracking0 (CarrierTracking0.xci)]", 3, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// r (cr): Re-customize IP: addNotify
+selectButton(PAResourceAtoD.CustomizeCoreDialog_DOCUMENTATION, "Documentation"); // E (f, r)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (r)
+dismissDialog("Re-customize IP"); // r (cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, KalmanIPExample (KalmanIPExample.sv), CarrierTracking0 : CarrierTracking0 (CarrierTracking0.xci)]", 3); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, KalmanIPExample (KalmanIPExample.sv), CarrierTracking0 : CarrierTracking0 (CarrierTracking0.xci), flt_fma_special_detect(rtl) (floating_point_v7_1_rfs.vhd)]", 4, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, KalmanIPExample (KalmanIPExample.sv), CarrierTracking0 : CarrierTracking0 (CarrierTracking0.xci)]", 3, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, KalmanIPExample (KalmanIPExample.sv), CarrierTracking0 : CarrierTracking0 (CarrierTracking0.xci)]", 3, true, false, false, false, true, false); // B (F, cr) - Popup Trigger - Node
+// Elapsed time: 10 seconds
+selectMenuItem(PAResourceCommand.PACommandNames_GENERATE_COMPOSITE_FILE, "Generate Output Products..."); // ai (ao, cr)
+// Run Command: PAResourceCommand.PACommandNames_GENERATE_COMPOSITE_FILE
+// aI (cr): Generate Output Products: addNotify
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_CLOSE_DIALOG_UNSAVED_CHANGES_WILL, "Cancel"); // a (aI)
+// 'bq' command handler elapsed time: 7 seconds
+dismissDialog("Generate Output Products"); // aI (cr)
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aL (aI, cr)
+// Tcl Command: 'rdi::info_commands {s*}'
+// Tcl Command: 'rdi::info_commands {se*}'
+// Tcl Command: 'rdi::info_commands {set*}'
+// Tcl Command: 'rdi::info_commands {set_*}'
+// Tcl Command: 'rdi::info_commands {set_p*}'
+// Tcl Command: 'rdi::info_commands {set_pa*}'
+// Tcl Command: 'rdi::info_commands {set_par*}'
+// Tcl Command: 'rdi::info_commands {set_para*}'
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "set_para", true); // aF (ac, cr)
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "set_param generalmaxthreads 32", true); // aF (ac, cr)
+// Tcl Command: 'set_param generalmaxthreads 32'
+// Tcl Command: 'set_param generalmaxthreads 32'
+// Tcl Message: set_param generalmaxthreads 32 
+// Tcl Message: ERROR: [Common 17-153] Param 'generalmaxthreads' does not exist 
+// Elapsed time: 14 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "set_param general.maxthreads 32", true); // aF (ac, cr)
+// Tcl Command: 'set_param general.maxthreads 32'
+// Tcl Command: 'set_param general.maxthreads 32'
+// Tcl Message: set_param general.maxthreads 32 
+// Tcl Message: 32 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cr): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bB (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cr)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cr): Launch Runs: addNotify
+selectComboBox(PAResourceItoN.NumJobsChooser_NUMBER_OF_JOBS, "16", 15); // e (be, f)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 6 seconds
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Launch Runs"); // f (cr)
+// TclEventType: FILE_SET_CHANGE
+// bB (cr):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 16 
+// Tcl Message: INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/caohy/work/Kalman/vivado/KalmanIPExample/KalmanIPExample.srcs/sources_1/ip/CarrierTracking0/CarrierTracking0.xci' is already up-to-date 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sun Sep 27 00:09:48 2020] Launched synth_1... Run output will be captured here: /home/caohy/work/Kalman/vivado/KalmanIPExample/KalmanIPExample.runs/synth_1/runme.log [Sun Sep 27 00:09:48 2020] Launched impl_1... Run output will be captured here: /home/caohy/work/Kalman/vivado/KalmanIPExample/KalmanIPExample.runs/impl_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 7145.711 ; gain = 84.668 ; free physical = 50052 ; free virtual = 61493 
+// Elapsed time: 40 seconds
+dismissDialog("Generate Bitstream"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 77 MB. Current time: 9/27/20, 12:09:50 AM PDT
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 185 seconds
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 655, 65); // dT (af, cr)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 280, 87); // dT (af, cr)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 238, 83); // dT (af, cr)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 663, 216); // dT (af, cr)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// aj (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 222 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_REPORTS_WINDOW, "View Reports"); // a (Q, aj)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // aj (cr)
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 15); // u (O, cr)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 15); // u (O, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,568 MB. GUI used memory: 124 MB. Current time: 9/27/20, 12:16:50 AM PDT
+// [Engine Memory]: 1,568 MB (+32061kb) [00:16:10]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Schematic]", 26, false); // u (O, cr)
+// bB (cr):  Open Synthesized Design : addNotify
+// Tcl Message: open_run synth_1 -name synth_1 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xcku040-ffva1156-2-e 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,927 MB. GUI used memory: 78 MB. Current time: 9/27/20, 12:17:15 AM PDT
+// [Engine Memory]: 2,142 MB (+519530kb) [00:16:49]
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// HMemoryUtils.trashcanNow. Engine heap size: 2,184 MB. GUI used memory: 77 MB. Current time: 9/27/20, 12:17:30 AM PDT
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 2,598 MB. GUI used memory: 77 MB. Current time: 9/27/20, 12:17:38 AM PDT
+// [Engine Memory]: 2,598 MB (+366058kb) [00:16:59]
+// TclEventType: DESIGN_NEW
+// Xgd.load filename: /tools/Xilinx/Vivado/2019.2/data/parts/xilinx/kintexu/devint/kintexu/xcku040/xcku040.xgd; ZipEntry: xcku040_detail.xgd elapsed time: 1.2s
+// [GUI Memory]: 172 MB (+26392kb) [00:17:01]
+// [Engine Memory]: 2,737 MB (+9756kb) [00:17:02]
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 2.6s
+// Device: addNotify
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  2536 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Device 21-403] Loading part xcku040-ffva1156-2-e INFO: [Project 1-454] Reading design checkpoint '/home/caohy/work/Kalman/vivado/KalmanIPExample/KalmanIPExample.srcs/sources_1/ip/CarrierTracking0/CarrierTracking0.dcp' for cell 'CarrierTracking0' INFO: [Project 1-454] Reading design checkpoint '/home/caohy/work/Kalman/vivado/KalmanIPExample/KalmanIPExample.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'clk_wiz_0' 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00.91 ; elapsed = 00:00:00.87 . Memory (MB): peak = 7543.480 ; gain = 0.000 ; free physical = 49455 ; free virtual = 60922 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 2172 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2019.2 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Parsing XDC File [/home/caohy/work/Kalman/vivado/KalmanIPExample/KalmanIPExample.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clk_wiz_0/inst' Finished Parsing XDC File [/home/caohy/work/Kalman/vivado/KalmanIPExample/KalmanIPExample.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clk_wiz_0/inst' Parsing XDC File [/home/caohy/work/Kalman/vivado/KalmanIPExample/KalmanIPExample.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clk_wiz_0/inst' 
+// Tcl Message: INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/caohy/work/Kalman/vivado/KalmanIPExample/KalmanIPExample.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57] INFO: [Timing 38-2] Deriving generated clocks [/home/caohy/work/Kalman/vivado/KalmanIPExample/KalmanIPExample.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57] 
+// Tcl Message: get_clocks: Time (s): cpu = 00:00:17 ; elapsed = 00:00:08 . Memory (MB): peak = 8136.344 ; gain = 425.348 ; free physical = 49064 ; free virtual = 60531 
+// Tcl Message: Finished Parsing XDC File [/home/caohy/work/Kalman/vivado/KalmanIPExample/KalmanIPExample.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clk_wiz_0/inst' Parsing XDC File [/home/caohy/work/Kalman/vivado/KalmanIPExample/KalmanIPExample.srcs/constrs_1/new/KalmanIPeXAPLE.xdc] Finished Parsing XDC File [/home/caohy/work/Kalman/vivado/KalmanIPExample/KalmanIPExample.srcs/constrs_1/new/KalmanIPeXAPLE.xdc] 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 8138.344 ; gain = 0.000 ; free physical = 49168 ; free virtual = 60635 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 96 instances were transformed.   DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 62 instances   DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 23 instances   IBUF => IBUF (IBUFCTRL, INBUF): 10 instances   IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 1 instance   
+// Device view-level: 0.0
+// ExpRunCommands.openSynthResults elapsed time: 50.2s
+// Tcl Message: open_run: Time (s): cpu = 00:00:57 ; elapsed = 00:00:49 . Memory (MB): peak = 8399.609 ; gain = 1240.891 ; free physical = 48873 ; free virtual = 60343 
+// [GUI Memory]: 190 MB (+10311kb) [00:17:04]
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+// [Engine Memory]: 2,920 MB (+47393kb) [00:17:04]
+// Elapsed time: 50 seconds
+dismissDialog("Open Synthesized Design"); // bB (cr)
+// PAPropertyPanels.initPanels (CarrierTracking0 (CarrierTracking0)) elapsed time: 0.3s
+// [Engine Memory]: 3,301 MB (+247340kb) [00:17:24]
+// u (cr):  Generate Schematic : addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 3,329 MB. GUI used memory: 136 MB. Current time: 9/27/20, 12:18:05 AM PDT
+// Elapsed time: 21 seconds
+dismissDialog("Generate Schematic"); // u (cr)
+// [Engine Memory]: 3,614 MB (+154602kb) [00:17:31]
+// RouteApi::initDelayMediator elapsed time: 38s
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "KalmanIPExample.sv", 2); // i (h, cr)
+// RouteApi: Init Delay Mediator Swing Worker Finished
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 3); // i (h, cr)
+selectButton(PAResourceQtoS.SchematicView_PREVIOUS, "Schematic_previousview"); // E (f, cr)
+// Elapsed time: 44 seconds
+expandTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[KalmanIPExample, Nets (37)]", 1); // bD (O, cr)
+collapseTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[KalmanIPExample, Nets (37)]", 1); // bD (O, cr)
+expandTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[KalmanIPExample, Leaf Cells (18)]", 2); // bD (O, cr)
+// Elapsed time: 10 seconds
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12); // u (O, cr)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12); // u (O, cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 16, false); // u (O, cr)
+// A (cr): Elaborate Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bB (cr):  Open Elaborated Design : addNotify
+// TclEventType: ELABORATE_START
+dismissDialog("Elaborate Design"); // A (cr)
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xcku040-ffva1156-2-e Top: KalmanIPExample 
+// TclEventType: ELABORATE_FINISH
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 3,966 MB. GUI used memory: 140 MB. Current time: 9/27/20, 12:20:00 AM PDT
+// [Engine Memory]: 3,966 MB (+180024kb) [00:19:21]
+// TclEventType: DESIGN_NEW
+// Schematic: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1541 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 9157.777 ; gain = 0.000 ; free physical = 48139 ; free virtual = 59609 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 9157.777 ; gain = 0.000 ; free physical = 48180 ; free virtual = 59651 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 9157.777 ; gain = 0.000 ; free physical = 48176 ; free virtual = 59647 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 9157.777 ; gain = 0.000 ; free physical = 48176 ; free virtual = 59647 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Project 1-454] Reading design checkpoint '/home/caohy/work/Kalman/vivado/KalmanIPExample/KalmanIPExample.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'clk_wiz_0' INFO: [Project 1-454] Reading design checkpoint '/home/caohy/work/Kalman/vivado/KalmanIPExample/KalmanIPExample.srcs/sources_1/ip/CarrierTracking0/CarrierTracking0.dcp' for cell 'CarrierTracking0' 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00.89 ; elapsed = 00:00:00.85 . Memory (MB): peak = 9157.777 ; gain = 0.000 ; free physical = 48090 ; free virtual = 59560 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 2162 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2019.2 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Opt 31-140] Inserted 10 IBUFs to IO ports without IO buffers. INFO: [Opt 31-141] Inserted 6 OBUFs to IO ports without IO buffers. 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Parsing XDC File [/home/caohy/work/Kalman/vivado/KalmanIPExample/KalmanIPExample.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clk_wiz_0/inst' Finished Parsing XDC File [/home/caohy/work/Kalman/vivado/KalmanIPExample/KalmanIPExample.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clk_wiz_0/inst' Parsing XDC File [/home/caohy/work/Kalman/vivado/KalmanIPExample/KalmanIPExample.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clk_wiz_0/inst' Finished Parsing XDC File [/home/caohy/work/Kalman/vivado/KalmanIPExample/KalmanIPExample.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clk_wiz_0/inst' 
+// Tcl Message: INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/caohy/work/Kalman/vivado/KalmanIPExample/KalmanIPExample.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/KalmanIPExample_propImpl.xdc]. Resolution: To avoid this warning, move constraints listed in [.Xil/KalmanIPExample_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis. INFO: [Timing 38-2] Deriving generated clocks 
+// Tcl Message: Parsing XDC File [/home/caohy/work/Kalman/vivado/KalmanIPExample/KalmanIPExample.srcs/constrs_1/new/KalmanIPeXAPLE.xdc] Finished Parsing XDC File [/home/caohy/work/Kalman/vivado/KalmanIPExample/KalmanIPExample.srcs/constrs_1/new/KalmanIPeXAPLE.xdc] Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00 . Memory (MB): peak = 9379.594 ; gain = 0.000 ; free physical = 47954 ; free virtual = 59425 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 96 instances were transformed.   DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 62 instances   DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 23 instances   IBUF => IBUF (IBUFCTRL, INBUF): 10 instances   IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 1 instance   
+// Tcl Message: RTL Elaboration Complete:  : Time (s): cpu = 00:00:42 ; elapsed = 00:00:34 . Memory (MB): peak = 9379.594 ; gain = 221.816 ; free physical = 47835 ; free virtual = 59306 
+// Tcl Message: 18 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Tcl Message: synth_design: Time (s): cpu = 00:00:42 ; elapsed = 00:00:34 . Memory (MB): peak = 9379.594 ; gain = 221.816 ; free physical = 47835 ; free virtual = 59306 
+// Tcl Message: INFO: [Common 17-600] The following parameters have non-default value. general.maxThreads 
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 2.2s
+// Elapsed time: 34 seconds
+dismissDialog("Open Elaborated Design"); // bB (cr)
+// [GUI Memory]: 203 MB (+3052kb) [00:19:29]
+// u (cr):  Generate Schematic : addNotify
+dismissDialog("Generate Schematic"); // u (cr)
+// Elapsed time: 39 seconds
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aL (aI, cr)
+// Elapsed time: 23 seconds
+selectButton(PAResourceQtoS.SchematicView_TOGGLE_AUTOHIDE_PINS_FOR_SELECTED_CELLS, "Schematic_autohidepins"); // x (f, cr): FALSE
+selectButton(PAResourceQtoS.SchematicView_TOGGLE_AUTOHIDE_PINS_FOR_SELECTED_CELLS, "Schematic_autohidepins"); // x (f, cr): TRUE
+selectButton(PAResourceQtoS.SchematicView_TOGGLE_AUTOHIDE_PINS_FOR_SELECTED_CELLS, "Schematic_autohidepins"); // x (f, cr): FALSE
+selectButton(PAResourceQtoS.SchematicView_REMOVE, "Schematic_remove"); // E (f, cr)
+selectButton(PAResourceCommand.PACommandNames_SELECT_AREA, "Schematic_select_area"); // x (f, cr): TRUE
+// Run Command: PAResourceCommand.PACommandNames_SELECT_AREA
+selectButton(PAResourceCommand.PACommandNames_ZOOM_FIT, "Schematic_zoom_fit"); // E (f, cr)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_FIT
+selectButton(PAResourceItoN.NetlistSchematicView_SHOW_CELLS_IN_THIS_SCHEMATIC, "1 Cell"); // h (f, cr)
+closeView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // f
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 16, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 16, false, false, false, false, false, true); // u (O, cr) - Double Click
+// u (cr):  Generate Schematic : addNotify
+// Elapsed time: 10 seconds
+dismissDialog("Generate Schematic"); // u (cr)
+// [GUI Memory]: 215 MB (+2261kb) [00:23:37]
+// Elapsed time: 165 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, KalmanIPExample (KalmanIPExample.sv), CarrierTracking0 : CarrierTracking0 (CarrierTracking0.xci), mult_gen_v12_0_16(xilinx) (mult_gen_v12_0_vh_rfs.vhd)]", 8, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, KalmanIPExample (KalmanIPExample.sv), CarrierTracking0 : CarrierTracking0 (CarrierTracking0.xci), flt_fma_special_detect(rtl) (floating_point_v7_1_rfs.vhd)]", 4, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, KalmanIPExample (KalmanIPExample.sv), CarrierTracking0 : CarrierTracking0 (CarrierTracking0.xci), regslice_both_w1 (regslice_core.v)]", 5, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, KalmanIPExample (KalmanIPExample.sv), CarrierTracking0 : CarrierTracking0 (CarrierTracking0.xci), xbip_dsp48a1_wrapper_v3_0(synth) (xbip_dsp48_wrapper_v3_0_vh_rfs.vhd)]", 20, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, KalmanIPExample (KalmanIPExample.sv), CarrierTracking0 : CarrierTracking0 (CarrierTracking0.xci), xbip_dsp48_wrapper_v3_0_4(synth) (xbip_dsp48_wrapper_v3_0_vh_rfs.vhd)]", 19, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, KalmanIPExample (KalmanIPExample.sv), CarrierTracking0 : CarrierTracking0 (CarrierTracking0.xci), xbip_dsp48a1_wrapper_v3_0(synth) (xbip_dsp48_wrapper_v3_0_vh_rfs.vhd)]", 20, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, KalmanIPExample (KalmanIPExample.sv), CarrierTracking0 : CarrierTracking0 (CarrierTracking0.xci), xbip_dsp48a_wrapper_v3_0(synth) (xbip_dsp48_wrapper_v3_0_vh_rfs.vhd)]", 21, false); // B (F, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 4,004 MB. GUI used memory: 151 MB. Current time: 9/27/20, 12:50:06 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,004 MB. GUI used memory: 143 MB. Current time: 9/27/20, 1:20:06 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,004 MB. GUI used memory: 143 MB. Current time: 9/27/20, 1:50:06 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,004 MB. GUI used memory: 143 MB. Current time: 9/27/20, 2:20:06 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,004 MB. GUI used memory: 143 MB. Current time: 9/27/20, 2:50:07 AM PDT
+// Elapsed time: 9318 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, KalmanIPExample (KalmanIPExample.sv), CarrierTracking0 : CarrierTracking0 (CarrierTracking0.xci)]", 3); // B (F, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 4,004 MB. GUI used memory: 143 MB. Current time: 9/27/20, 3:20:07 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,004 MB. GUI used memory: 143 MB. Current time: 9/27/20, 3:50:07 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,004 MB. GUI used memory: 143 MB. Current time: 9/27/20, 4:20:08 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,004 MB. GUI used memory: 143 MB. Current time: 9/27/20, 4:50:08 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,004 MB. GUI used memory: 143 MB. Current time: 9/27/20, 5:20:08 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,004 MB. GUI used memory: 143 MB. Current time: 9/27/20, 5:50:09 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,004 MB. GUI used memory: 143 MB. Current time: 9/27/20, 6:20:09 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,004 MB. GUI used memory: 143 MB. Current time: 9/27/20, 6:50:09 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,004 MB. GUI used memory: 143 MB. Current time: 9/27/20, 7:20:10 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,004 MB. GUI used memory: 143 MB. Current time: 9/27/20, 7:50:10 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,004 MB. GUI used memory: 143 MB. Current time: 9/27/20, 8:20:10 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,004 MB. GUI used memory: 143 MB. Current time: 9/27/20, 8:50:10 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,004 MB. GUI used memory: 143 MB. Current time: 9/27/20, 9:20:11 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,004 MB. GUI used memory: 143 MB. Current time: 9/27/20, 9:50:11 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,004 MB. GUI used memory: 143 MB. Current time: 9/27/20, 10:20:11 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,004 MB. GUI used memory: 143 MB. Current time: 9/27/20, 10:50:12 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,004 MB. GUI used memory: 143 MB. Current time: 9/27/20, 11:20:12 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,004 MB. GUI used memory: 143 MB. Current time: 9/27/20, 11:50:12 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,004 MB. GUI used memory: 143 MB. Current time: 9/27/20, 12:20:13 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,004 MB. GUI used memory: 143 MB. Current time: 9/27/20, 12:50:13 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,004 MB. GUI used memory: 143 MB. Current time: 9/27/20, 1:20:13 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,004 MB. GUI used memory: 143 MB. Current time: 9/27/20, 1:50:14 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,004 MB. GUI used memory: 143 MB. Current time: 9/27/20, 2:20:14 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,004 MB. GUI used memory: 143 MB. Current time: 9/27/20, 2:50:14 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,004 MB. GUI used memory: 143 MB. Current time: 9/27/20, 3:20:15 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,004 MB. GUI used memory: 143 MB. Current time: 9/27/20, 3:50:15 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,004 MB. GUI used memory: 143 MB. Current time: 9/27/20, 4:20:15 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,004 MB. GUI used memory: 143 MB. Current time: 9/27/20, 4:50:16 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,004 MB. GUI used memory: 143 MB. Current time: 9/27/20, 5:20:16 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,004 MB. GUI used memory: 143 MB. Current time: 9/27/20, 5:50:16 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,004 MB. GUI used memory: 143 MB. Current time: 9/27/20, 6:20:17 PM PDT
+// WARNING: HEventQueue.dispatchEvent() is taking  827066 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 4,004 MB. GUI used memory: 143 MB. Current time: 9/27/20, 7:02:43 PM PDT
+// WARNING: HEventQueue.dispatchEvent() is taking  1256 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 4,004 MB. GUI used memory: 143 MB. Current time: 9/27/20, 7:32:44 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,004 MB. GUI used memory: 143 MB. Current time: 9/27/20, 8:02:45 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,004 MB. GUI used memory: 143 MB. Current time: 9/27/20, 8:32:45 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,004 MB. GUI used memory: 143 MB. Current time: 9/27/20, 9:02:45 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,004 MB. GUI used memory: 143 MB. Current time: 9/27/20, 9:32:46 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,004 MB. GUI used memory: 143 MB. Current time: 9/27/20, 10:02:46 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,004 MB. GUI used memory: 143 MB. Current time: 9/27/20, 10:32:46 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,004 MB. GUI used memory: 143 MB. Current time: 9/27/20, 11:02:47 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,004 MB. GUI used memory: 143 MB. Current time: 9/27/20, 11:32:47 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,004 MB. GUI used memory: 143 MB. Current time: 9/28/20, 12:02:47 AM PDT
+// Elapsed time: 77574 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, KalmanIPExample (KalmanIPExample.sv), CarrierTracking0 : CarrierTracking0 (CarrierTracking0.xci)]", 3, true); // B (F, cr) - Node
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (2)", 3); // i (h, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 4,014 MB. GUI used memory: 143 MB. Current time: 9/28/20, 12:32:48 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,014 MB. GUI used memory: 143 MB. Current time: 9/28/20, 1:02:48 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,014 MB. GUI used memory: 143 MB. Current time: 9/28/20, 1:32:48 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,014 MB. GUI used memory: 143 MB. Current time: 9/28/20, 2:02:48 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,014 MB. GUI used memory: 143 MB. Current time: 9/28/20, 2:32:49 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,014 MB. GUI used memory: 143 MB. Current time: 9/28/20, 3:02:49 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,014 MB. GUI used memory: 144 MB. Current time: 9/28/20, 3:32:49 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,014 MB. GUI used memory: 143 MB. Current time: 9/28/20, 4:02:50 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,030 MB. GUI used memory: 143 MB. Current time: 9/28/20, 4:14:40 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,030 MB. GUI used memory: 143 MB. Current time: 9/28/20, 4:44:40 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,030 MB. GUI used memory: 143 MB. Current time: 9/28/20, 5:14:40 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,030 MB. GUI used memory: 143 MB. Current time: 9/28/20, 5:44:40 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,030 MB. GUI used memory: 143 MB. Current time: 9/28/20, 6:14:41 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,030 MB. GUI used memory: 143 MB. Current time: 9/28/20, 6:44:41 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,030 MB. GUI used memory: 143 MB. Current time: 9/28/20, 7:14:41 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,030 MB. GUI used memory: 143 MB. Current time: 9/28/20, 7:44:41 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,030 MB. GUI used memory: 143 MB. Current time: 9/28/20, 8:14:42 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,030 MB. GUI used memory: 143 MB. Current time: 9/28/20, 8:44:42 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,030 MB. GUI used memory: 143 MB. Current time: 9/28/20, 9:14:42 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,030 MB. GUI used memory: 143 MB. Current time: 9/28/20, 9:44:43 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,030 MB. GUI used memory: 143 MB. Current time: 9/28/20, 10:14:43 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,030 MB. GUI used memory: 143 MB. Current time: 9/28/20, 10:44:43 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,030 MB. GUI used memory: 143 MB. Current time: 9/28/20, 11:14:43 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,030 MB. GUI used memory: 143 MB. Current time: 9/28/20, 11:44:44 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,030 MB. GUI used memory: 144 MB. Current time: 9/28/20, 12:14:44 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,030 MB. GUI used memory: 143 MB. Current time: 9/28/20, 12:44:44 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,030 MB. GUI used memory: 143 MB. Current time: 9/28/20, 1:14:44 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,030 MB. GUI used memory: 143 MB. Current time: 9/28/20, 1:44:45 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,030 MB. GUI used memory: 143 MB. Current time: 9/28/20, 2:14:45 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,030 MB. GUI used memory: 143 MB. Current time: 9/28/20, 2:44:45 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,030 MB. GUI used memory: 143 MB. Current time: 9/28/20, 3:14:45 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,030 MB. GUI used memory: 143 MB. Current time: 9/28/20, 3:44:46 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,030 MB. GUI used memory: 143 MB. Current time: 9/28/20, 4:14:46 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,030 MB. GUI used memory: 143 MB. Current time: 9/28/20, 4:44:46 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,030 MB. GUI used memory: 143 MB. Current time: 9/28/20, 5:14:46 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,030 MB. GUI used memory: 143 MB. Current time: 9/28/20, 5:44:47 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,030 MB. GUI used memory: 143 MB. Current time: 9/28/20, 6:14:47 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,030 MB. GUI used memory: 143 MB. Current time: 9/28/20, 6:44:47 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,030 MB. GUI used memory: 143 MB. Current time: 9/28/20, 7:14:48 PM PDT

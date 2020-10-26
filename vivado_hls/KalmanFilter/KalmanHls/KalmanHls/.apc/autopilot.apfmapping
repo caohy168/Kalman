@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="Kalman.h" path="/home/caohy/work/Kalman/vivado_hls/KalmanFilter/Kalman.h"/>
+    <originFiles name="Kalman.cpp" path="/home/caohy/work/Kalman/vivado_hls/KalmanFilter/Kalman.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="Kalman_inspire.cpp" path="/home/caohy/work/Kalman/vivado_hls/KalmanFilter/Kalman_inspire.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

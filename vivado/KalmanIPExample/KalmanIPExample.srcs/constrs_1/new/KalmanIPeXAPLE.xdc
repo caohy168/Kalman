@@ -1,0 +1,43 @@
+#Clocks constrained in the IP level xdc, hence below constraint is not required^M
+#create_clock -period 6.400 -name refclk -waveform {0.000 3.200} [get_ports refclk_p]^M
+set_property PACKAGE_PIN G10 [get_ports "CLK_125MHZ_P"]
+set_property IOSTANDARD LVDS [get_ports "CLK_125MHZ_P"]
+set_property PACKAGE_PIN F10 [get_ports "CLK_125MHZ_N"]
+set_property IOSTANDARD LVDS [get_ports "CLK_125MHZ_N"]
+
+set_property PACKAGE_PIN G26 [get_ports "Omega1_TVALID"]
+set_property IOSTANDARD LVCMOS18 [get_ports "Omega1_TVALID"]
+set_property PACKAGE_PIN M20 [get_ports "Omega0_TREADY"]
+set_property IOSTANDARD LVCMOS18 [get_ports "Omega0_TREADY"]
+set_property PACKAGE_PIN L20 [get_ports "Omega0_TVALID"]
+set_property IOSTANDARD LVCMOS18 [get_ports "Omega0_TVALID"]
+set_property PACKAGE_PIN R21 [get_ports "DetaTheta_TREADY"]
+set_property IOSTANDARD LVCMOS18 [get_ports "DetaTheta_TREADY"]
+set_property PACKAGE_PIN R22 [get_ports "DetaTheta_TVALID"]
+set_property IOSTANDARD LVCMOS18 [get_ports "DetaTheta_TVALID"]
+#SDIO
+set_property PACKAGE_PIN AM10 [get_ports "Omega1Initinital_ap_vld"]
+set_property IOSTANDARD LVCMOS18 [get_ports "Omega1Initinital_ap_vld"]
+set_property PACKAGE_PIN AL10 [get_ports "Omega0Initinital_ap_vld"]
+set_property IOSTANDARD LVCMOS18 [get_ports "Omega0Initinital_ap_vld"]
+set_property PACKAGE_PIN AD9 [get_ports "DeltaThetaInitinital_ap_vld"]
+set_property IOSTANDARD LVCMOS18 [get_ports "DeltaThetaInitinital_ap_vld"]
+
+set_property PACKAGE_PIN AP9 [get_ports "DotNumber_ap_vld"]
+set_property IOSTANDARD LVCMOS18 [get_ports "DotNumber_ap_vld"]
+set_property PACKAGE_PIN AN9 [get_ports "Ts_ap_vld"]
+set_property IOSTANDARD LVCMOS18 [get_ports "Ts_ap_vld"]
+set_property PACKAGE_PIN AH9 [get_ports "ap_ready"]
+set_property IOSTANDARD LVCMOS18 [get_ports "ap_ready"]
+set_property PACKAGE_PIN AH8 [get_ports "ap_idle"]
+set_property IOSTANDARD LVCMOS18 [get_ports "ap_idle"]
+#SFP
+set_property PACKAGE_PIN K21 [get_ports "ap_done"]
+set_property IOSTANDARD LVCMOS18 [get_ports "ap_done"]
+set_property PACKAGE_PIN AL8 [get_ports "ap_start"]
+set_property IOSTANDARD LVCMOS18 [get_ports "ap_start"]
+set_property PACKAGE_PIN AM9 [get_ports "ap_rst_n"]
+set_property IOSTANDARD LVCMOS18 [get_ports "ap_rst_n"]
+
+set_property PACKAGE_PIN AJ10 [get_ports "Omega1_TREADY"]
+set_property IOSTANDARD LVCMOS18 [get_ports "Omega1_TREADY"]

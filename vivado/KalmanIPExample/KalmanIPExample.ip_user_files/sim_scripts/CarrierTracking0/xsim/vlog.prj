@@ -1,0 +1,22 @@
+verilog xil_defaultlib  \
+"../../../ipstatic/hdl/verilog/CarrierTracking_dbkb.v" \
+"../../../ipstatic/hdl/verilog/CarrierTracking_dkbM.v" \
+"../../../ipstatic/hdl/verilog/CarrierTracking_dlbW.v" \
+"../../../ipstatic/hdl/verilog/CarrierTracking_fdEe.v" \
+"../../../ipstatic/hdl/verilog/CarrierTracking_feOg.v" \
+"../../../ipstatic/hdl/verilog/CarrierTracking_ffYi.v" \
+"../../../ipstatic/hdl/verilog/CarrierTracking_fg8j.v" \
+"../../../ipstatic/hdl/verilog/CarrierTracking_fibs.v" \
+"../../../ipstatic/hdl/verilog/CarrierTracking_fjbC.v" \
+"../../../ipstatic/hdl/verilog/CarrierTracking_scud.v" \
+"../../../ipstatic/hdl/verilog/CarrierTracking_shbi.v" \
+"../../../ipstatic/hdl/verilog/CarrierTracking_V.v" \
+"../../../ipstatic/hdl/verilog/CarrierTracking_W.v" \
+"../../../ipstatic/hdl/verilog/NoiseRand.v" \
+"../../../ipstatic/hdl/verilog/pow_generic_double_s.v" \
+"../../../ipstatic/hdl/verilog/regslice_core.v" \
+"../../../ipstatic/hdl/verilog/CarrierTracking.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort
